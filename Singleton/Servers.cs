@@ -22,10 +22,10 @@ namespace Singleton
         {
             if (string.IsNullOrWhiteSpace(serverAddress) || (!serverAddress.StartsWith("http://") && !serverAddress.StartsWith("https://")) || !serverList.Add(serverAddress))
             {
-                return false; // Сервер не добавлен
+                return false; 
             }
 
-            return true; // Сервер успешно добавлен
+            return true; 
         }
 
         public List<string> GetHttpServers()
